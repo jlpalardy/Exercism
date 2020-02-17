@@ -33,15 +33,4 @@ class Matrix:
 	def column(self, index):
 		return [row[index - 1] for row in self.matrix2D]
 
-
-#Testing
-#matrix1 = Matrix('1 2\n3 4')
-#print('matrix 1 num cols:', matrix1.numCols)
-#print('matrix 1 num rows:', matrix1.numRows)	
-#print('matrix 1 row 1:', matrix1.row(1))
-#print('matrix 1 row 2:', matrix1.row(2))
-#print('matrix 1 col 1:', matrix1.column(1))
-#print('matrix 1 col 2:', matrix1.column(2))
-
-#matrix2 = Matrix('1 2\n3')
 	
