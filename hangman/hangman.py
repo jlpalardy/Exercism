@@ -35,7 +35,7 @@ class Hangman:
 			else:
 				self.remaining_guesses -= 1
 				print(f'Nope! You have {self.remaining_guesses} guesses left.') 
-			self.update_status() 		
+		self.update_status() 		
 
 	def update_status(self):
 		if len(self.unguessed) == 0:
