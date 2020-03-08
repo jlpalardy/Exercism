@@ -1,6 +1,7 @@
 class Matrix:
 	def __init__(self, matrix_string):
-		self.matrix2D = [row.split() for row in matrix_string.split('\n')]
+		self.matrix2D = [[int(x) for x in row.split()] for row in matrix_string.split('\n')]		
+		print(f'Matrix: {self.matrix2D}')
 
 		#The following checks to make sure that the rows are all the same
 		#length- if they're not, that indicates that there are some column
@@ -16,10 +17,10 @@ class Matrix:
 			self.numCols = rowLengths.pop()
 
 	def row(self, index):
-		return [int(x) for x in self.matrix2D[index - 1]]
+		return [x for x in self.matrix2D[index - 1]]
 
 	def column(self, index):
 		column = [row[index - 1] for row in self.matrix2D]
-		return [int(x) for x in column]
+		return [x for x in column]
 
 	
