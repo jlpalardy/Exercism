@@ -20,10 +20,10 @@ class Hangman:
 		#Handling bad guesses
 		if self.status != STATUS_ONGOING:
 			raise ValueError('Game over!')
-		if len(char) != 1 or char.isalpha() == False:
+		elif len(char) != 1 or char.isalpha() == False:
 			print('Guess only letters, and only one at a time!')
 			self.remaining_guesses -= 1
-		if char in self.guessed:
+		elif char in self.guessed:
 			print('You already guessed that!')
 			self.remaining_guesses -= 1
 		else:
