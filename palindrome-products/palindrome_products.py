@@ -39,8 +39,7 @@ def palindromeCheck(dictionary):
 
 	for i in range(len(productsList)):
 		productStr = str(productsList[i])
-		revProductStr = productStr[::-1]
-		if productStr == revProductStr:
+		if productStr == productStr[::-1]
 			palindromeDict.update({factorsList[i]:productsList[i]})
 	return palindromeDict
 
