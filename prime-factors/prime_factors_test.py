@@ -1,6 +1,6 @@
 import unittest
 
-from prime_factors import factors
+from prime_factors3 import factors
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
