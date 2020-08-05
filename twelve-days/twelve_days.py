@@ -24,4 +24,3 @@ def recite(start_verse, end_verse):
 			finalList.append(''.join(printList))
 
 	return finalList
-
