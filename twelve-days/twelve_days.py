@@ -7,20 +7,21 @@ def recite(start_verse, end_verse):
 	'seven Swans-a-Swimming, ', 'eight Maids-a-Milking, ', 'nine Ladies Dancing, ',
 	'ten Lords-a-Leaping, ', 'eleven Pipers Piping, ', 'twelve Drummers Drumming, ']
 	
+	finalList = []
 	
 	for verse in range(start_verse - 1, end_verse):
 	
 		printList = ['On the ', ' day of Christmas my true love gave to me: ']
 		if verse == 0:
 			printList.insert(1, ordinalList[verse])
-			printList.append(' a Partridge in a Pear Tree.')
-			print(''.join(printList))
+			printList.append('a Partridge in a Pear Tree.')
+			finalList.append(''.join(printList))
 
 		else:	
 			printList.insert(1,ordinalList[verse])
 			for i in reversed(range(0, verse + 1)):
 				printList.append(giftList[i])
-			print(''.join(printList))
+			finalList.append(''.join(printList))
 
+	return finalList
 
-recite(1,12)
