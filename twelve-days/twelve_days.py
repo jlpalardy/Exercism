@@ -15,12 +15,12 @@ def recite(start_verse, end_verse):
 		if verse == 0:
 			printList.insert(1, ordinalList[verse])
 			printList.append('a Partridge in a Pear Tree.')
-			finalList.append(''.join(printList))
-
+		
 		else:	
 			printList.insert(1,ordinalList[verse])
 			for i in reversed(range(0, verse + 1)):
 				printList.append(giftList[i])
-			finalList.append(''.join(printList))
+				
+		finalList.append(''.join(printList))
 
 	return finalList
